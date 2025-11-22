@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Python desde Cero</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: rgba(255,255,255,0.95);
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            margin-bottom: 40px;
+        }
+        header img {
+            width: 140px;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 6px 15px rgba(0,0,0,0.3));
+        }
+        h1 {
+            color: #5a67d8;
+            margin: 15px 0;
+            font-size: 3em;
+        }
+        .subtitle {
+            color: #4c51bf;
+            font-size: 1.4em;
+            margin: 15px 0;
+        }
+        .author {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 25px;
+        }
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        h2 {
+            color: #5a67d8;
+            border-bottom: 4px solid #a3bffa;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        h2 i {
+            color: #667eea;
+            font-size: 1.3em;
+        }
+        ol { 
+            padding-left: 15px; 
+            counter-reset: item;
+        }
+        li {
+            margin: 25px 0;
+            padding: 22px;
+            background: #f8faff;
+            border-left: 7px solid #667eea;
+            border-radius: 12px;
+            position: relative;
+            counter-increment: item;
+        }
+        li:before {
+            content: counter(item);
+            position: absolute;
+            left: -15px;
+            top: 15px;
+            background: #667eea;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        code {
+            background: #e2e8f0;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            color: #2d3748;
+            font-size: 1.05em;
+        }
+        .img-center {
+            text-align: center;
+            margin: 35px 0;
+        }
+        .img-center img {
+            max-width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            transition: transform 0.4s;
+        }
+        .img-center img:hover {
+            transform: scale(1.03);
+        }
+        .faq q {
+            font-weight: bold;
+            color: #5a67d8;
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            font-size: 1.3em;
+        }
+        .python-logo { 
+            animation: float 6s ease-in-out infinite; 
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" alt="Logo Python" class="python-logo">
+            <h1>Introducción a Python desde Cero</h1>
+            <p class="subtitle">Tu puerta de entrada al mundo de la programación y la tecnología</p>
+            <p class="author">Desarrollada por Jhonatan • 2025</p>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-bullseye"></i> Objetivo del Curso</h2>
+            <p>Aprende Python desde cero aunque nunca hayas programado en tu vida. En pocas horas estarás creando tus propios programas y entendiendo cómo funciona la tecnología que usas todos los días.</p>
+            <div class="img-center">
+                <img src="https://images.unsplash.com/photo-1521185496955-150a6c0743dc?w=900" alt="Persona aprendiendo programación feliz">
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-rocket"></i> Pasos para Empezar</h2>
+            <ol>
+                <li><strong>Instala Python</strong> → Ve a <a href="https://python.org" target="_blank">python.org</a> y descarga gratis</li>
+                <li><strong>Escribe tu primer programa</strong><br><code>print("¡Hola mundo, soy programador!")</code></li>
+                <li><strong>Crea variables</strong> → Guarda nombres, números, listas, diccionarios...</li>
+                <li><strong>Toma decisiones con if/else</strong> → Tu programa piensa como tú</li>
+                <li><strong>Repite tareas con bucles for y while</strong> → Automatización fácil</li>
+                <li><strong>Crea tus propias funciones</strong> → ¡Código reutilizable y profesional!</li>
+            </ol>
+            <div class="img-center">
+                <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=900" alt="Código Python colorido en pantalla">
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-book"></i> Glosario Básico</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+                <div style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1515876305430-f06edab8282a?w=600" alt="Variable" style="border-radius:50%; width:120px; height:120px; object-fit:cover;">
+                    <p><strong>Variable</strong>: donde guardas información</p>
+                </div>
+                <div style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab1b?w=600" alt="Función" style="border-radius:50%; width:120px; height:120px; object-fit:cover;">
+                    <p><strong>Función</strong>: bloque de código reutilizable</p>
+                </div>
+                <div style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Bucle" style="border-radius:50%; width:120px; height:120px; object-fit:cover;">
+                    <p><strong>Bucle</strong>: repetir acciones automáticamente</p>
+                </div>
+                <div style="text-align:center;">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600" alt="Librería" style="border-radius:50%; width:120px; height:120px; object-fit:cover;">
+                    <p><strong>Librería</strong>: superpoderes listos para usar</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+            <p class="faq"><q>¿Es difícil aprender Python?</q><br>¡No! Es uno de los lenguajes más fáciles y amigables del mundo.</p>
+            <p class="faq"><q>¿Cuánto tardo en ver resultados?</q><br>¡En menos de 1 hora ya tendrás tu primer programa funcionando!</p>
+            <p class="faq"><q>¿Para qué sirve Python en 2025?</q><br>Inteligencia artificial, automatización, desarrollo web, análisis de datos, ciberseguridad, videojuegos, ciencia... ¡TODO!</p>
+            
+            <div class="img-center">
+                <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=900" alt="Futuro con Python e IA">
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                <i class="fas fa-heart" style="color:#ff6b6b;"></i> 
+                Desarrollada con pasión por <strong>Jhonatan</strong><br><br>
+                <strong style="font-size:1.4em;">¡Tu aventura en programación empieza AHORA!</strong>
+            </p>
+        </footer>
+    </div>
+  <script src='https://cdn.jotfor.ms/agent/embedjs/019aadf060987af5b9257c9eaa9cc1549274/embed.js'>
+</script>
+</body>
+</html>
